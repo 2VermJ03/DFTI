@@ -1,0 +1,42 @@
+			<div id="carousel">
+				<img class="slides" src="images/img1.jpeg">
+				<img class="slides" src="images/img2.jpg">
+				<img class="slides" src="images/img3.jpeg">
+	
+				<button class="carousel_btn" onClick="imgMove(-1)">&#10094;</button>
+				<button class="carousel_btn" onClick="imgMove(1)">&#10095;</button>	
+
+				<script>
+					var slideIndex = 1;
+					showImg(slideIndex);
+
+					function imgMove(n) {
+					showImg(slideIndex += n);
+					}
+
+					function showImg(n) {
+					var i;
+					var x = document.getElementsByClassName("slides");
+					if (n > x.length) {slideIndex = 1}    
+					if (n < 1) {slideIndex = x.length}
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					}
+					x[slideIndex-1].style.display = "block";  
+					}
+				</script>
+			</div> <!--[END]#carousel -->
+			</div> <!--[END]#col-9 -->
+			<p id="about_text"> TripsWiki is a site which aims to help people out with planning their holiday. It contains information about places of interest, such as hotels, cities, historical sites, bars, restaurants, beaches, mountains, ski resorts, and anywhere else that people might want to visit while they are on holiday. </p>
+			<div class="col-4">
+				<img class="img-circle" src="images/img1.jpeg">
+				<h3 class="img_desc"> Plan your next trip </h3>
+			</div> <!--[END]#col-4 -->
+			<div class="col-4">
+				<img class="img-circle" src="images/img2.jpg">
+				<h3 class="img_desc"> Review the places you've been </h3>
+			</div> <!--[END]#col-4 -->
+			<div class="col-4">
+				<img class="img-circle" src="images/img3.jpeg">
+				<h3 class="img_desc"> New 5-star rating system </h3>
+			</div> <!--[END]#col-4 -->

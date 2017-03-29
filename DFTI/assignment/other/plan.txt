@@ -1,0 +1,38 @@
+Analysis and design
+
+Jay Verma
+Q12027103
+
+a) Allow a user to add a new place of interest. This may be any registered user, as it is intended to be a wiki-like system. The user should provide the name, type (e.g. hotel, city, historical site, bar, restaurant, beach, mountain, etc), and a description. This should add a record to the places table, containing the information the user entered together with the username of the currently logged-in user.
+
+	HTML form to add place of interest
+	CSS to make the form layout readable
+	Javascript to add new place of interest
+	PHP to confirm user is logged in
+	
+b) Allow a user to search for a place of interest by type. A user should be able to enter a type (e.g. "hotel", "historical site", "restaurant" or "bar"); once they have entered the type, all places of interest of that type should appear. 
+Each search result should contain a hyperlink, allowing the user to recommend that place of interest.
+
+	HTML search bar to search for place of interest
+	PHP to respond to the request of types of places
+	More HTML to add a hyperlink on each result to recommend the place
+	
+c) Allow a user to recommend a place of interest. For a basic pass, this should simply add one to the recommended column for that place of interest.
+	
+	Javascript to add 1 to the amount of times a place has been recommended column
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
