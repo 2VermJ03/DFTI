@@ -1,0 +1,404 @@
+/*  
+	Jay Verma
+	Q12027103
+	
+	Stylesheet
+	
+	Colour scheme:
+	
+	#CDE6F2			Lightest
+	#A8BDC7
+	#144966
+	#002133
+	#001E2E			Darkest
+	
+	
+	https://coolors.co/cde6f2-144966-004266-002133-001e2e 
+*/
+
+/*
+	Using the 12-column grid system to help layout my site	
+*/
+
+.row{
+	width: 100%;
+}
+
+.col-half{
+	width: 4.165%;	
+	float: left;
+}
+
+.col-1{
+	width: 8.33%;
+	float: left;
+}
+
+.col-2{
+	width: 16.66%;
+	float: left;
+}
+
+.col-3{
+	width: 24.99%;
+	float: left;
+}
+
+.col-4{
+	width: 33.32%;
+	float: left;
+}
+
+.col-5{
+	width: 41.65%;
+	float: left;
+}
+
+.col-6{
+	width: 49.98%;
+	float: left;
+}
+
+.col-7{
+	width: 58.31%;
+	float: left;
+}
+
+.col-8{
+	width: 66.64%;
+	float: left;
+}
+
+.col-9{
+	width: 74.97%;
+	float: left;
+}
+
+.col-10{
+	width: 83.3%;
+	float: left;
+}
+
+.col-11{
+	width: 91.63%;
+	float: left;
+}
+
+.col-12{
+	width: 99.96% ;
+	float: left;
+	
+}
+
+
+
+
+
+body{
+	background-color: #144966;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	min-height: 500px;
+	
+}
+
+#wrapper{
+	margin: 0 auto;
+}
+
+
+
+#header{
+	background-color: #001E2E;
+	height: 100px;
+	margin: 0px 0px 15px 0px;
+	border-bottom-color: #DFEFF6;
+	border-style: solid;
+	border-top-color: #A8BDC7;
+	padding: 0;
+	
+	
+	
+}
+
+h1{
+	padding-top: 10px;
+	color: #CDE6F2;
+	font-size: 92px;
+	margin: 0 auto;
+	float: left;
+	display: inline-block;
+	
+	
+}
+
+
+
+
+.main, #login, .leftDiv, #reviews{
+	background-color: #DFEFF6;
+	min-height: 500px;
+	height: 100%;
+	border-style: solid;
+	border-color: #001E2E;
+	overflow: auto;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	color: #001E2E;
+	margin: 0 auto;
+	color: #001E2E;
+	font-size: 38px;
+}
+
+
+#footer{
+	background-color: #001E2E;
+	height: 100px;
+	border-top-style: solid;
+	border-top-color: #A8BDC7;
+	
+	
+}
+
+
+#active{
+	background-color: #A8BDC7;
+	
+}
+
+
+
+#navlinks{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	text-align: center;
+	overflow: auto;
+	float: right;
+	color: #CDE6F2;
+	padding-top: 63px;
+	
+}
+
+#navlinks li{
+	font-size: 32px;
+	float: left;
+	color: #CDE6F2;
+}
+
+#navlinks li a{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-radius: 10px 10px 0px 0px;
+	color: #CDE6F2;
+	
+}
+
+#navlinks li a:hover{
+	background-color: white;
+}
+
+#navlinks li a:visited{
+	text-decoration: none;
+	color: #CDE6F2;
+	
+}
+
+#aboutText{
+	font-size: 24px;
+	padding: 15px;
+	text-align: center;
+	display: block;
+	float: center;
+}
+
+h4{
+	color: #CDE6F2;
+	float: right;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+
+
+
+
+
+
+fieldset{
+	color: #001E2E;
+	font-size: 17px;
+	margin: 0 auto;
+	padding: 10px;
+	float: center;
+	text-align: center;
+}
+
+
+#buttonDiv{
+	text-align: center;
+	
+	
+}
+
+.btnLabel{
+	color: black;
+	margin: 0 auto;
+	padding: 5px;
+	font-size: 24px;
+}
+
+.switch{
+	height: 75%;
+	width: 75%;
+	display: block;
+	margin: 0 auto;
+	
+	
+}
+
+
+
+
+
+
+#searchDiv{
+	padding: 10px;
+	margin: 0 auto;
+	
+}
+
+#searchbar{
+	width: 200px;
+}
+
+#search_text{
+	max-width: 100%;
+	width: 79%;
+	border-color: #001E2E;
+}
+
+#search_btn{
+	max-width: 100%;
+	width: 19%;
+	border-color: #001E2E;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+#carousel{
+	text-align: left;
+	float: left;
+	display: block;
+}
+
+.imgSlideMain{
+	height: 100%;
+	width: 100%;
+	
+	
+}
+
+
+
+
+
+#separator{
+	opacity: 0;
+	
+}
+
+
+
+
+
+
+#addForm, #searchForm{
+	display: none;
+}
+
+
+
+
+input[name="addFormName"], input[name="addFormDesc"], select[name="addFormType"]{
+	width: 100%;
+	
+}
+
+input[value="Search"], input[value="Add"]{
+	height: 40px;
+	width: 100%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	
+}
+
+input[name="searchFormName"]{
+	width: 100%;
+	border-style: solid;
+	border-width: 2px;	
+	
+}
+
+
+/*
+	Login page specifics
+*/
+
+
+#loginForm, #registerForm, #forgotPasswordForm{
+	width: 300px;
+	margin: 0 auto;
+	display: none;
+	padding: 0;
+}
+
+
+#u_name{
+	width: 100%;
+	border-color: #001E2E;	
+}
+
+#p_word{
+	width: 100%;
+	border-color: #001E2E;
+}
+
+#submit{
+	margin-top: 10px; 
+	width: 100%;
+	height: 30px;
+	border-color: #001E2E;
+	border-radius: 15px;
+	
+}
+
+#forgotPassword, #registerHere, #cancelChangePassword{
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+#forgotPassword a, #registerHere a, #cancelChangePassword a{
+	font-size: 32px;
+	text-decoration: none;
+	border-style: dashed;
+	padding: 10px;
+	
+}
+
+

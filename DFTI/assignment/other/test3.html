@@ -1,0 +1,95 @@
+<!doctype html>
+<!-- 
+    Jay Verma
+	Q12027103
+	
+	Home page
+	
+	All images used are royalty free, downloaded from: https://www.pexels.com 
+-->
+<html lang="en">
+<head>
+  <!-- Ensures the document is using the correct char set --> 
+  <meta charset="utf-8">
+  <meta name="description" content="TripsWiki">
+  
+  <!-- Using viewport in case of use on a mobile device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>TripsWiki</title>
+  
+  <!-- Link to css/stylesheet -->
+  <link rel="stylesheet" href="css/stylesheet2.css?v=1.0">
+  
+  <!-- favicon image for tab -->
+  <link rel="icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
+
+    
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+
+  </head>
+
+<body>    
+
+<div id="header">
+	<a href="index3.html"><h1> TripsWiki </h1></a>
+</div> <!-- [END]#header -->
+
+<div id="main">
+	<div id="carousel">
+		<img class="slides" src="images/img1.jpeg">
+		<img class="slides" src="images/img2.jpg">
+		<img class="slides" src="images/img3.jpeg">
+	
+		<button class="carousel_btn" onClick="imgMove(-1)"><</button>
+		<button class="carousel_btn" onClick="imgMove(1)">></button>	
+
+		<script>
+			var slideIndex = 1;
+			showImg(slideIndex);
+
+			function imgMove(n) {
+			showImg(slideIndex += n);
+			}
+
+			function showImg(n) {
+			var i;
+			var x = document.getElementsByClassName("slides");
+			if (n > x.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+	</div> <!--[END]#carousel -->
+	
+	<div id="about_text">
+		<p id="about_text"> TripsWiki is a site which aims to help people out with planning their holiday. It contains information about places of interest, such as hotels, cities, historical sites, bars, restaurants, beaches, mountains, ski resorts, and anywhere else that people might want to visit while they are on holiday. </p>
+	</div> <!--[END]#about_text -->
+
+		<div class="circles">
+			<img class="img_circle" src="images/img4.jpg">
+			<h3 class="img_desc"> Plan your next trip </h3>
+		</div> <!--[END]#circles -->
+		<div class="circles">
+			<img class="img_circle" src="images/img5.jpg">
+			<h3 class="img_desc"> Review the places you've been </h3>
+		</div> <!--[END]#circles -->	
+		<div class="circles">
+			<img class="img_circle" src="images/img6.jpeg">
+			<h3 class="img_desc"> New 5-star rating system </h3>
+		</div> <!--[END]#circles -->
+	
+</div> <!--[END]#main -->
+
+<div id="footer">
+	<h4> Jay Verma <br/> Q12027103 </h4>
+</div> <!--[END]#footer -->
+
+</body>
+</html>

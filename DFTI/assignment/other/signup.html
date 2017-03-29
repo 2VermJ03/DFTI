@@ -1,0 +1,91 @@
+<!doctype html>
+<!-- 
+    Jay Verma
+	Q12027103
+	
+	Signing in page
+	
+	All images used are royalty free, downloaded from: https://www.pexels.com 
+-->
+<html lang="en">
+<head>
+  <!-- Ensures the document is using the correct char set --> 
+  <meta charset="utf-8">
+  <meta name="description" content="TripsWiki">
+  
+  <!-- Using viewport in case of use on a mobile device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>TripsWiki</title>
+  
+  <!-- Link to css/stylesheet -->
+  <link rel="stylesheet" href="css/stylesheet.css?v=1.0">
+  
+  <!-- favicon image for tab -->
+  <link rel="icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
+
+    
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  </head>
+
+<body>    
+<div id="wrapper">
+
+<div class="row">
+	<div class="col-12">
+		<div id="header">
+			<h1> TripsWiki </h1>
+				<ul id="navlinks">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="signin.html">Sign in</a></li>
+					<li><a href="signup.html" class="active">Sign up</a></li>
+					<li><a href="reviews.html">Reviews</a></li>
+				</ul>
+		</div> <!-- [END]#header -->
+	</div> <!--[END]#col-12 -->
+</div> <!--[END]#row -->
+		
+<div class="row">
+	<div class="col-12">
+		<div class="main" id="back_img">
+			<h2> Sign up </h2>
+			<form id="signup_form" action="php/signup.php" method="post">
+				<fieldset>
+					<legend class="legend"> Please enter your personal details below: </legend>			
+						<p class="formfield"><label>First name:</name> <input type="text" name="f_name" id="f_name" placeholder="Please enter your first name..." required></label></p>
+						<p class="formfield"><label>Last name:</name> <input type="text" name="l_name" id="l_name" placeholder="Please enter your last name..." required></label></p>
+						<p class="formfield"><label>Email:    <input type="email" name="email" id="email" placeholder="Please enter your email address..." required></label></p>
+				</fieldset>
+				<fieldset>
+					<legend class="legend"> Please choose a username and password: </legend>
+						<p class="formfield"><label>Username:<input type="text" name="u_name" id="u_name" required></label></p>
+						<p class="formfield"><label>Password:<input type="text" name="p_word" id="p_word" required></label></p>
+				</fieldset>
+				<input type="submit" id="submit">
+			</form>
+			<form id="login_form" method="post">
+				<fieldset>
+					<legend class="legend"> Login </legend>
+						<p class="formfield"><label>Username:<input type="text" name="u_name" id="u_name"></label></p>
+						<p class="formfield"><label>Password:<input type="text" name="p_word" id="p_word"></label></p>
+				</fieldset>
+					<input type="submit" id="submit">
+			</form>			
+		</div> <!-- [END]#main --> 
+	</div> <!--[END]#col-12 -->
+</div> <!--[END]#row -->
+	
+<div class="row">
+	<div class="col-12">	
+		<div id="footer">
+			<h4> Jay Verma <br/> Q12027103 </h4>
+		</div> <!--[END]#footer -->
+	</div> <!--[END]#col-12 -->
+</div> <!--[END]#row -->
+
+</div>	 <!-- [END]#wrapper -->	
+</body>
+</html>
