@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+h1{
+	color: #FBFBFB;
+	font-size: 86px;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+	padding: 0;
+}

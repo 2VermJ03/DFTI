@@ -1,0 +1,91 @@
+<!doctype html>
+<!-- 
+    Jay Verma
+	Q12027103
+	
+	Home page
+	
+	All images used are royalty free, downloaded from: https://www.pexels.com 
+-->
+<html lang="en">
+<head>
+  <!-- Ensures the document is using the correct char set --> 
+  <meta charset="utf-8">
+  <meta name="description" content="TripsWiki">
+  
+  <!-- Using viewport in case of use on a mobile device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>TripsWiki</title>
+  
+  <!-- Link to css/stylesheet -->
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  
+  <!-- favicon image for tab -->
+  <link rel="icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
+
+    
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+  </head>
+
+<body>
+<div id="wrapper">
+
+<div id="header">
+	<a href="index.html"><h1> TripsWiki </h1></a>
+	<div id="loginDiv">
+		<ul>
+			<li><a href="#"> Login </a></li>
+			<li><a href="#"> Register </a></li>
+		</ul>
+	</div><!--[END]#loginDiv -->
+</div> <!-- [END]#header -->
+
+
+
+<div id="main">
+<div id="leftDiv">
+	<form id="addForm" method="post">
+		<fieldset>
+			<legend id="addFormLegend"> Add a new place of interest </legend>
+				<br/>
+				<label class="addFormLabel">Name</label>
+					<input type="text" id="addFormName">
+				<br/>
+				<label class="addFormLabel">Type</label>
+					<select>
+						<option value="hotel">Hotel</option>
+						<option value="city">City</option>
+						<option value="site">Historical Site</option>
+						<option value="bar">Bar</option>
+						<option value="restaurant">Restaurant</option>
+						<option value="beach">Beach</option>
+						<option value="mountain">Mountain</option>
+						<option value="other">Other</option>
+					</select>	
+				<br/>
+				<label class="addFormLabel">Description</label>
+					<input type="text" name="addFormDesc">
+		</fieldset>
+			<input type="submit" value="Add">
+	</form>
+</div><!--[END]#leftDiv -->
+
+<div id="rightDiv">
+	<p> right div </p>
+</div><!--[END]#rightDiv -->
+</div> <!--[END]#main -->
+
+<div id="footer">
+	<h4> Jay Verma <br/> Q12027103 </h4><br/>
+	<p id="footerDate"></p>
+	<script src="js/footerDate.js"></script>
+</div> <!--[END]#footer -->
+
+</div> <!--[END]#wrapper -->
+</body>
+</html>

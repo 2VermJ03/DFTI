@@ -1,0 +1,99 @@
+<div id="starRatingsDiv">
+						<img src="images/emptyStars.png" class="starRating" id="S0">
+						<img src="images/halfStars.png" class="starRating" id="S05">
+						<img src="images/1Stars.png" class="starRating" id="S1">
+						<img src="images/1.5Stars.png" class="starRating" id="S15">
+						<img src="images/2Stars.png" class="starRating" id="S2">
+						<img src="images/2.5Stars.png" class="starRating" id="S25">
+						<img src="images/3Stars.png" class="starRating" id="S3">
+						<img src="images/3.5Stars.png" class="starRating" id="S35">
+						<img src="images/4Stars.png" class="starRating" id="S4">
+						<img src="images/4.5Stars.png" class="starRating" id="S45">
+						<img src="images/5Stars.png" class="starRating" id="S5">
+						
+						<input id="minusRating" value="Minus" type="button" onClick="minusRating(-1)">
+						<input id="plusRating" value="Add" type="button" onClick="plusRating(1)">
+						
+						<script>
+						
+							function starRatings(){
+								
+								var minusRating = document.getElementById('minusRating');
+								var plusRating = document.getElementById('plusRating');
+								
+								var allRatings = document.getElementsByClassName('starRating');
+								
+								var S0 = document.getElementById('S0');
+								var S05 = document.getElementById('S05');
+								var S1 = document.getElementById('S1');
+								var S15 = document.getElementById('S15');
+								var S2 = document.getElementById('S2');
+								var S25 = document.getElementById('S25');
+								var S3 = document.getElementById('S3');
+								var S35 = document.getElementById('S35');
+								var S4 = document.getElementById('S4');
+								var S45 = document.getElementById('S45');
+								var S5 = document.getElementById('S5');
+								
+								var index = 0;
+								
+								
+								
+								
+								allRatings.style.display = 'none';
+								
+								
+								if(index == 0){
+									S0.style.display = 'block';
+								}
+								else if(index == 1){
+									S05.style.display = 'block';
+								}
+								else if(index == 2){
+									S1.style.display = 'block';
+								}
+								else if(index == 3){
+									S15.style.display = 'block';
+								}
+								else if(index == 4){
+									S2.style.display = 'block';
+								}
+								else if(index == 5){
+									S25.style.display = 'block';
+								}
+								else if(index == 6){
+									S3.style.display = 'block';
+								}
+								else if(index == 7){
+									S35.style.display = 'block';
+								}
+								else if(index == 8){
+									S4.style.display = 'block';
+								}
+								else if(index == 9){
+									S45.style.display = 'block';
+								}
+								else if(index == 10){
+									S5.style.display = 'block';
+								}
+							}
+						</script>
+					</div><!--[END]#starRatingsDiv -->
+					
+					
+<style>				
+.starRating{
+	height: 50px;
+	width: 100%;
+}
+
+.plusRating, .minusRating{
+	height: 20px;
+	width: 50px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+</style>
